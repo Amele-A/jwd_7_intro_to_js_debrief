@@ -10,10 +10,18 @@
 
 //Write your code for GenBuzz below this line:
 
-
-
-
-
+let myNumber;
+if (typeof myNumber !== "number") {
+  console.log("This is not a number");
+} else if (myNumber / 3 == 0) {
+  console.log("Gen");
+} else if (myNumber / 5) {
+  console.log("Buzz");
+} else if (myNumber / 3 == 0 && myNumber / 5 == 0) {
+  console.log("GenBuzz");
+} else {
+  console.log("the value of myNumber");
+}
 
 //2. E-COMMERCE ITEM LIST
 
@@ -28,14 +36,31 @@
 // If the variable input is not an item in the store, then print 'Invalid Item' to the console.
 
 //Write your code for the E-Commerce item list below this line:
+let Items  = "$50";
 
-
-
+let Shoes = "$50"
+let Jeans = "$25"
+ let Hat = "$12"
+let Socks = "$2"
+switch (Items) {
+  case Shoes:
+    console.log("$50");
+    break;
+  case Jeans:
+    console.log("$25");
+    break;
+  case Hat:
+    console.log("$12");
+  case Socks:
+    console.log("$2");
+    break;
+  default:
+    console.log("Invalid Item");
+}
 
 //3. Print a random integer (whole number) between 50(inclusive) and 100(exclusive) to the console
 // Reference: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
 
 //Write your code below this line:
 
-
-
+console.log(Math.random()* 100)
